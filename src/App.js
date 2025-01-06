@@ -1,9 +1,13 @@
 
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import LoginPage from './pages/LoginPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import HomePage from './pages/HomePage';
+import ServicesPage from './pages/ServicesPage';
+import PortfolioPage from './pages/PortfolioPage';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 
 
 function App() {
@@ -25,12 +29,17 @@ function App() {
     //   </header>
     // </div>
     <Router>
-    <Routes>
-    <Route path="/login" element={<LoginPage />} />
+
+      <Routes>
         <Route path="/home" element={<HomePage />} />
-        <Route path="/" element={<LoginPage />} />
-    </Routes>
-  </Router>
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/" exact element={<HomePage />} />
+      </Routes>
+
+    </Router>
   );
 }
 
