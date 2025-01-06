@@ -1,6 +1,6 @@
 /* src/components/Menu.css */
-.menu {
-    background-color: #333;
+/*.menu {
+    background-color: gray;
     padding: 10px 0;
     position: fixed;
     top: 0;
@@ -9,17 +9,9 @@
     z-index: 1000;
   }
   
-  .menu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
   
-  .menu li {
-    margin: 0 15px;
-  }
+  
+  
   
   .menu a {
     text-decoration: none;
@@ -31,4 +23,49 @@
   .menu a:hover {
     color: #ff6347;
   }
+  */  
+
+  /* General styles for the menu */
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Styles for the left-aligned menu items */
+.menu-items {
+  display: flex;
+  gap: 15px; /* Spacing between menu items */
+  flex-grow: 1; /* Pushes "Login" to the right */
+}
+
+/* Styles for the right-aligned login item */
+.menu-login {
+  display: flex;
+}
+
+/* General link styles */
+.menu a {
+  text-decoration: none;
+  color: teal;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  background-color: #ddd;
+}
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  margin: 0 15px;
+}
   
